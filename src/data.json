@@ -1,0 +1,92 @@
+{
+  "section-header": {
+    "navbar": [
+      {
+        "id": 1,
+        "text": "Home",
+        "href": "home",
+        "icon": "Icons/home.png",
+        "alt": "icon home"
+      },
+      {
+        "id": 2,
+        "text": "Products",
+        "href": "products",
+        "icon": "Icons/products.png",
+        "alt": "icon products"
+      },
+      {
+        "id": 3,
+        "text": "Explore",
+        "href": "explore",
+        "icon": "Icons/explore.png",
+        "alt": "icon explore"
+      },
+      {
+        "id": 6,
+        "text": "Project",
+        "href": "project",
+        "icon": "Icons/projects.png",
+        "alt": "icon project"
+      }
+    ],
+    "contact": {
+      "id": 7,
+      "text": "Contact Us",
+      "href": "contact",
+      "icon": "Icons/contact.png",
+      "alt": "icon contact"
+    },
+    "blog": {
+      "id": 8,
+      "text": "Blog",
+      "href": "https://www.blogger.com/",
+      "icon": "Icons/blog.png",
+      "icon-color": "Icons/blog-color.png",
+      "alt": "icon blog"
+    },
+    "button": {}
+  },
+  "section-hero": {
+    "title": "Welcome to Landing Template",
+    "subtitle": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eius at vitae molestias nam nobis quae possimus corporis quasi fuga? Quas ratione, itaque reprehenderit consequatur facilis nihil provident impedit esse.",
+    "bg": {
+      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714064507/drone_landing/backgrounds/bg-hero.png",
+      "alt": "bg hero image"
+    }
+  },
+  "section-example": {},
+  "section-contact": {
+    "text": "Get in touch! Enter your email below to reach out to us.",
+    "input_placeholder": "Enter your email",
+    "button": "Contact Us",
+    "error": "Please enter a valid email address."
+  },
+  "section-footer": {
+    "trademark": "AeroAutonomy",
+    "slogan": "slogan",
+    "copy": "All Rights Reserved 2024",
+    "design": "Designed by",
+    "designer": "Robert Smith"
+  },
+  "logo": {
+    "url": "/Logos/Logo.png",
+    "alt": "logo image",
+    "text": "TextLogo"
+  },
+  "logo-color": {
+    "url": "/Logos/LogoNegro.svg",
+    "alt": "logo image",
+    "text": "TextLogo"
+  },
+  "contact": {
+    "email": "example@gmail.com"
+  },
+  "blog": {
+    "icon": "Icons/blog.png",
+    "icon-color": "Icons/blog-color.png",
+    "title": "Blog",
+    "text": "Visit our blog!",
+    "url": "https://www.blogger.com/"
+  }
+}
