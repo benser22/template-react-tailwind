@@ -1,5 +1,3 @@
-// src/components/AnimatedSection.jsx
-import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
