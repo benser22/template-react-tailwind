@@ -22,7 +22,7 @@ const MenuMobile = ({ isOpen, onClick }) => {
               alt={data.logo.alt}
               className="w-[36px] h-[36px] cursor-pointer mx-auto mt-4"
             />
-            <p className="font-bold active:text-green-custom text-center mt-2">
+            <p className="font-bold active:text-secondary text-center mt-2">
               {data.logo.text}
             </p>
             <hr className="mt-6 w-[50vw]"></hr>
@@ -62,7 +62,7 @@ const MenuMobile = ({ isOpen, onClick }) => {
           </a>
 
           <a
-            href={`mailto:${data.contact.email}?subject=Contacto`}
+            href={`mailto:${data.contact.email}?subject=Contact`}
             className="flex items-center gap-4 cursor-pointer"
           >
             <img

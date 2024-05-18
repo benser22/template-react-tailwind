@@ -1,7 +1,8 @@
 import useNav from '../../hooks/useNav';
 import MenuMobile from './MenuMobile';
 import data from '../../data.json';
-import { BsJustify, BsXLg } from 'react-icons/bs';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import CloseIcon from '../../utils/Icons/CloseIcon';
 import { Link } from 'react-scroll';
 import useScrollPosition from '../../hooks/useScrollPosition';
 
@@ -61,7 +62,7 @@ const Navbar = () => {
             </p>
           </a>
           <a
-            href={`mailto:${data.contact.email}?subject=Contacto`}
+            href={`mailto:${data.contact.email}?subject=Contact`}
             className="cursor-pointer"
           >
             <p className="text-md hover:text-secondary sm:text-[12px] lg:text-[16px] w-max">
@@ -74,7 +75,11 @@ const Navbar = () => {
         className="text-2xl cursor-pointer z-[99] text-white active:text-secondary flex items-center justify-center sm:hidden"
         onClick={handleIsOpen}
       >
-        {isOpen ? <BsXLg /> : <BsJustify />}
+        {isOpen ? (
+          <CloseIcon color={'white'} className="active:stroke-secondary" />
+        ) : (
+          <GiHamburgerMenu />
+        )}
       </button>
       <MenuMobile isOpen={isOpen} onClick={handleIsOpen} />
     </header>
