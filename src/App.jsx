@@ -4,6 +4,7 @@ import Layout from '../src/components/ui/Layout';
 import Navbar from './components/Navbar/Navbar';
 import Contact from './components/Sections/Contact.jsx';
 import Footer from './Footer/Footer';
+import AnimatedSection from './components/Sections/AnimatedSection.jsx';
 
 const LazyHero = lazy(() => import('./components/Hero/Hero.jsx'));
 
@@ -15,6 +16,10 @@ function App() {
         <Suspense fallback={<Loader />}>
           <LazyHero />
         </Suspense>
+        <div className="space-y-20 p-8">
+          <AnimatedSection />
+          <AnimatedSection />
+        </div>
         <Contact />
       </Layout>
       <Footer />
