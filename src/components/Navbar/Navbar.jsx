@@ -18,57 +18,42 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed z-[98] top-0 left-0 w-full px-8 sm:px-16 py-2 flex justify-between items-center h-[78px] text-white`}
+      className={`fixed z-[98] top-0 left-0 w-full px-8 sm:px-10 py-2 flex justify-between items-center h-[78px] text-white`}
       style={headerStyle}
     >
       <div className="flex items-center justify-between w-full">
-        <a href="/" className="flex gap-2 items-center">
+        <a href="/" className="flex gap-2 items-center min-w-max">
           <img
             src={data.logo.url}
             alt={data.logo.alt}
             className="w-[24px] h-[24px] sm:w-[32px] sm:h-[32px] cursor-pointer mr-2"
-          ></img>
-          <p className="text-md font-semibold hover:text-secondary sm:text-[12px] lg:text-[16px] w-max">
+          />
+          <p className="text-md font-semibold hover:text-secondary text-[18px] w-max">
             {data.logo.text}
           </p>
         </a>
-        <div className="hidden sm:flex items-center justify-between space-x-6 sm:space-x-3 md:space-x-6">
-          {data['section-header'].navbar.map((item, index) => (
-            <Link
-              to={item.href}
-              spy={false}
-              smooth={true}
-              duration={500}
-              key={index}
-              offset={-75}
-              className="cursor-pointer"
-            >
-              <p
-                className="text-md hover:text-secondary sm:text-[12px] lg:text-[16px] w-max"
-                key={item.id}
+        <div className="hidden w-full sm:flex items-center justify-end gap-4 md:gap-8 xl:gap-16 px-4">
+          {data['section-header'].links?.map((link, index) =>
+            link.external ? (
+              <a href={link.href} target="_blank" key={index}>
+                <p className="text-white font-semibold hover:text-secondary cursor-pointer min-w-max">
+                  {link.text}
+                </p>
+              </a>
+            ) : (
+              <Link
+                to={link.href}
+                smooth={true}
+                duration={500}
+                spy={false}
+                key={index}
               >
-                {item.text}
-              </p>
-            </Link>
-          ))}
-          <a
-            href={data['section-header'].blog.href}
-            key={data['section-header'].blog.id}
-            target="_blank"
-            className="cursor-pointer"
-          >
-            <p className="text-md hover:text-secondary sm:text-[12px] lg:text-[16px] w-max">
-              {data['section-header'].blog.text}
-            </p>
-          </a>
-          <a
-            href={`mailto:${data.contact.email}?subject=Contact`}
-            className="cursor-pointer"
-          >
-            <p className="text-md hover:text-secondary sm:text-[12px] lg:text-[16px] w-max">
-              {data['section-header'].contact.text}
-            </p>
-          </a>
+                <p className="text-white font-semibold hover:text-secondary cursor-pointer">
+                  {link.text}
+                </p>
+              </Link>
+            )
+          )}
         </div>
       </div>
       <button

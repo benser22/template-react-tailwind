@@ -16,10 +16,7 @@ function App() {
         <Suspense fallback={<Loader />}>
           <LazyHero />
         </Suspense>
-        <div className="space-y-20 p-8">
-          <AnimatedSection />
-          <AnimatedSection />
-        </div>
+        <AnimatedSection />
         <Contact />
       </Layout>
       <Footer />

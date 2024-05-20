@@ -1,10 +1,34 @@
 import data from '../data.json';
+import { Link } from 'react-scroll';
 
 function Footer() {
   return (
-    <footer className="flex w-full py-4 bg-gray-400 overflow-hidden">
+    <footer className="flex w-full py-4 overflow-hidden bg-slate-100">
       <div className="flex flex-col items-center justify-center text-black mx-auto">
-        <div className="w-screen flex items-center justify-around gap-12 p-4">
+        <div className="w-full flex items-center justify-center py-4 flex-wrap gap-y-4 px-2">
+          {data['section-footer'].links?.map((link, index) =>
+            link.external ? (
+              <a href={link.href} target="_blank" key={index}>
+                <p className="text-black font-semibold hover:text-primary cursor-pointer min-w-max px-2">
+                  {link.text}
+                </p>
+              </a>
+            ) : (
+              <Link
+                to={link.href}
+                smooth={true}
+                duration={500}
+                spy={false}
+                key={index}
+              >
+                <p className="text-black font-semibold hover:text-primary cursor-pointer min-w-max px-2">
+                  {link.text}
+                </p>
+              </Link>
+            )
+          )}
+        </div>
+        <div className="w-screen flex items-center justify-around gap-4 gap-y-8 p-4 flex-wrap">
           <a href="/" className="flex gap-2 items-center">
             <img
               src={data['logo-color'].url}

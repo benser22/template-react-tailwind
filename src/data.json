@@ -1,51 +1,56 @@
 {
   "section-header": {
-    "navbar": [
+    "links": [
       {
         "id": 1,
         "text": "Home",
         "href": "home",
         "icon": "Icons/home.png",
-        "alt": "icon home"
+        "alt": "icon home",
+        "external": false
       },
       {
         "id": 2,
-        "text": "Products",
-        "href": "products",
+        "text": "Option1",
+        "href": "option1",
         "icon": "Icons/products.png",
-        "alt": "icon products"
+        "alt": "icon products",
+        "external": false
       },
       {
         "id": 3,
-        "text": "Explore",
-        "href": "explore",
+        "text": "Option2",
+        "href": "contact",
         "icon": "Icons/explore.png",
-        "alt": "icon explore"
+        "alt": "icon explore",
+        "external": false
       },
       {
         "id": 6,
         "text": "Project",
         "href": "project",
         "icon": "Icons/projects.png",
-        "alt": "icon project"
+        "alt": "icon project",
+        "external": false
+      },
+      {
+        "id": 7,
+        "text": "Contact Us",
+        "href": "mailto:example@gmail.com?subject=Contact",
+        "icon": "Icons/contact.png",
+        "alt": "icon contact",
+        "external": true
+      },
+      {
+        "id": 8,
+        "text": "Blog",
+        "href": "https://www.blogger.com/",
+        "icon": "Icons/blog.png",
+        "icon-color": "Icons/blog-color.png",
+        "alt": "icon blog",
+        "external": true
       }
-    ],
-    "contact": {
-      "id": 7,
-      "text": "Contact Us",
-      "href": "contact",
-      "icon": "Icons/contact.png",
-      "alt": "icon contact"
-    },
-    "blog": {
-      "id": 8,
-      "text": "Blog",
-      "href": "https://www.blogger.com/",
-      "icon": "Icons/blog.png",
-      "icon-color": "Icons/blog-color.png",
-      "alt": "icon blog"
-    },
-    "button": {}
+    ]
   },
   "section-hero": {
     "title": "Welcome to Landing Template",
@@ -67,7 +72,45 @@
     "slogan": "slogan",
     "copy": "All Rights Reserved 2024",
     "design": "Designed by",
-    "designer": "Robert Smith"
+    "designer": "Robert Smith",
+    "links": [
+      {
+        "id": 1,
+        "text": "Home",
+        "href": "home",
+        "external": false
+      },
+      {
+        "id": 2,
+        "text": "Option1",
+        "href": "option1",
+        "external": false
+      },
+      {
+        "id": 3,
+        "text": "Option2",
+        "href": "contact",
+        "external": false
+      },
+      {
+        "id": 6,
+        "text": "Project",
+        "href": "project",
+        "external": false
+      },
+      {
+        "id": 7,
+        "text": "Contact Us",
+        "href": "mailto:example@gmail.com?subject=Contact",
+        "external": true
+      },
+      {
+        "id": 8,
+        "text": "Blog",
+        "href": "https://www.blogger.com/",
+        "external": true
+      }
+    ]
   },
   "logo": {
     "url": "/Logos/Logo.png",
