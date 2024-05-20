@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="flex w-full py-4 overflow-hidden bg-slate-100">
       <div className="flex flex-col items-center justify-center text-black mx-auto">
-        <div className="w-full flex items-center justify-center py-4 flex-wrap gap-y-4 px-2">
+        <div className="w-full flex items-center justify-center py-4 flex-wrap gap-y-4 px-2 gap-[4vw]">
           {data['section-footer'].links?.map((link, index) =>
             link.external ? (
               <a href={link.href} target="_blank" key={index}>
@@ -35,7 +35,7 @@ function Footer() {
               alt={data['logo-color'].alt}
               className="w-[24px] h-[24px] sm:w-[32px] sm:h-[32px] cursor-pointer mr-2"
             ></img>
-            <p className="text-md font-semibold hover:text-primary sm:text-[12px] lg:text-[16px] w-max">
+            <p className="text-md font-semibold hover:text-primary sm:text-[12px] lg:text-[18px] w-max">
               {data.logo.text}
             </p>
           </a>
