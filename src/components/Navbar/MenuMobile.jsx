@@ -66,24 +66,6 @@ const MenuMobile = ({ isOpen, onClick }) => {
               </Link>
             )
           )}
-          {/* {data['section-header'].links?.map((item, index) => (
-            <Link
-              to={item.href}
-              key={index}
-              className="flex items-center gap-4 active:text-secondary hover:text-secondary cursor-pointer"
-              smooth={true}
-              duration={700}
-              spy={false}
-              offset={-80}
-            >
-              <img
-                src={item.icon}
-                alt={item.alt}
-                className="w-[26px] h-[26px]"
-              />
-              <p className="font-bold">{item.text}</p>
-            </Link>
-          ))} */}
         </div>
       </ul>
     </div>
