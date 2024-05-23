@@ -20,13 +20,21 @@
       {
         "id": 3,
         "text": "Option2",
+        "href": "option2",
+        "icon": "Icons/explore.png",
+        "alt": "icon explore",
+        "external": false
+      },
+      {
+        "id": 4,
+        "text": "Option3",
         "href": "contact",
         "icon": "Icons/explore.png",
         "alt": "icon explore",
         "external": false
       },
       {
-        "id": 6,
+        "id": 5,
         "text": "Project",
         "href": "project",
         "icon": "Icons/projects.png",
@@ -34,7 +42,7 @@
         "external": false
       },
       {
-        "id": 7,
+        "id": 6,
         "text": "Contact Us",
         "href": "mailto:example@gmail.com?subject=Contact",
         "icon": "Icons/contact.png",
