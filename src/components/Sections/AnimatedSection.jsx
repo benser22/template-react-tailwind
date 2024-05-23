@@ -19,7 +19,7 @@ const AnimatedSection = () => {
         transition={{ duration: 0.5 }}
         className="p-12 shadow-xl rounded-lg w-full py-40"
       >
-        <h2 className="text-2xl font-bold mb-4">Animación al hacer scroll</h2>
+        <h2 className="text-2xl font-bold mb-4">Animación con Framer Motion</h2>
         <p className="mb-4">
           Este es un ejemplo de animación que aparece al hacer scroll usando
           Framer Motion y Tailwind CSS.

@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Contact from './components/Sections/Contact.jsx';
 import Footer from './Footer/Footer';
 import AnimatedSection from './components/Sections/AnimatedSection.jsx';
+import TailwindAnimated from './components/Sections/TailwindAnimated.jsx';
 
 const LazyHero = lazy(() => import('./components/Hero/Hero.jsx'));
 
@@ -17,6 +18,7 @@ function App() {
           <LazyHero />
         </Suspense>
         <AnimatedSection />
+        <TailwindAnimated />
         <Contact />
       </Layout>
       <Footer />
